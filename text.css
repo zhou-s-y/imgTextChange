@@ -1,0 +1,166 @@
+/*定义初始样式*/
+#left {
+    display: inline-block;
+    column-count: 3;
+    border: 2px solid rgb(226, 219, 219);
+    position: absolute;
+    top: 12%;
+    left: 4.5%;
+    width: 60%;
+    height: 70%;
+}
+
+#right {
+    display: inline-block;
+    position: absolute;
+    top: 12%;
+    left: 68%;
+    background-color: white;
+    width: 27%;
+    height: 70%;
+    border: 2px solid rgb(47, 47, 155);
+    border-radius: 5px;
+}
+
+.column {
+    height: 100%;
+}
+
+.column div {
+    height: 50%;
+}
+
+.column img {
+    height: 153px;
+    width: 230px;
+    object-fit: cover;
+    position: relative;
+    top: 17%;
+    left: 13%;
+}
+
+.column img:hover{
+    cursor: pointer;
+}
+
+
+.column span {
+    display: inline-block;
+    width: 230px;
+    text-align: center;
+    position: relative;
+    left: 13%;
+    bottom: -17%;
+}
+
+#right div:first-child ul {
+    margin: 0;
+    padding: 0;
+}
+
+#right div:first-child li {
+    width: 33%;
+    height: 26px;
+    color: rgb(32, 32, 110);
+    float: left;
+    margin: 0px;
+    border-left: 1px solid rgb(47, 47, 155);
+    border-bottom: 2px solid rgb(47, 47, 155);
+    list-style: none;
+    text-align: center;
+}
+
+#right div:first-child li:hover {
+    background-color: rgb(62, 122, 190);
+    color: #fff;
+}
+
+#right span {
+    display: block;
+    width: 342px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+/*大图隐藏样式*/
+.innerBox {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 690px;
+    height: 459px;
+    background-color: white;
+    z-index: 1002;
+    /*overflow: auto;*/
+}
+
+#outerBox {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    opacity: .70;
+}
+
+.bigImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*关闭按钮样式*/
+.close {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    background: silver;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px 0px black;
+    cursor: pointer;
+}
+
+.close:hover {
+    background: red;
+}
+
+.close:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 10px;
+    background: white;
+    transform: rotate(45deg);
+    top: 20px;
+    left: 10px;
+}
+
+.close:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background: white;
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 10px;
+}
+
+/*页面切换隐藏样式*/
+.news {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    line-height: 58px;
+    margin-top: 36px;
+    margin-bottom: 0;
+}
